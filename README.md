@@ -88,3 +88,18 @@ $ docker build -t royal-family-crud .
 # To run our container
 $ docker run -d -p 10000:10000 --name royals royal-family-crud
 ```
+
+## Push image to dockerhub
+``` bash
+# After creating a Docker Hub Account
+# login using
+$ docker login
+
+# Create a repository on the website
+
+# Tag your image
+$ docker tag local-image:tagname new-repo:tagname
+
+# Push image to docker hub
+$ docker push new-repo:tagname
+```

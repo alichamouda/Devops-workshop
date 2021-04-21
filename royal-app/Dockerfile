@@ -17,6 +17,6 @@ RUN go mod download
 
 # Build the application
 RUN go build -o main .
-
+EXPOSE 10000
 # Command to run when starting the container
 CMD ["./main"]
