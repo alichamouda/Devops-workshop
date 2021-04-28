@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  feedback-backend:
+    image: alichamouda/globorisk-pwa:latest
+    deploy:
+      replicas: 15
+    ports:
+      - 80:80
+
